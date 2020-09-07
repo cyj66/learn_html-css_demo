@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>事件</title>
+		<link rel="stylesheet" type="text/css" href="45.css">
+	</head>
+	
+	<body onload="alert('网页加载完毕')">                <!-- 双引号用过了里面要用单引号 -->
+		<button onclick="demo()">按钮</button>
+		<script>
+			function demo(){
+				alert("hello");
+			}
+		</script>
+		
+		<div class="div1" onmouseout="onOut(this)" onmouseover="onOver(this)">
+			<script>
+				function onOver(ooj){
+					ooj.innerHTML="hello";
+				}
+				function onOut(ooj){
+					ooj.innerHTML="world";
+				}
+			</script>
+		</div>
+		
+		<form>
+			<input type="text" onchange="change()">
+			<input type="text" onselect="myselect(this)" onfocus="myfocus(this)">
+		</form>
+		<script>
+			function change(){
+				alert("内容改变了");            //当然也可以把这个语句放进onchange
+			}
+			function myselect(bg){
+				bg.style.background="red";
+			}
+			function myfocus(bg){
+				bg.style.background="blue";
+			}
+		</script>
+	</body>
+</html>

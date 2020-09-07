@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>对象</title>
+	</head>
+	
+	<body>
+		<script>
+			people=new Object();  //创建对象
+			people.name="shy";
+			people.age="30";
+			//people={name:"shy",age:"30"};
+			document.write("name:"+people.name+",age:"+people.age);
+			<br/>
+			function peoplee(name,age){
+				this.name=name;
+				this.age=age;
+			}
+			people1=new peoplee("tian",20);
+			document.write("name:"+people1.name+",age:"+people1.age);
+		</script>
+	</body>
+</html>

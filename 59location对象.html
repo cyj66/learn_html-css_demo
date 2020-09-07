@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>location</title>
+	</head>
+	
+	<body>
+		<button id="btn" onclick="getloc()">按钮</button>
+		<p id="host"></p>
+		<script>
+			function getloc(){
+				document.getElementById("host").innerHTML=window.location.href;
+			}
+			
+			document.write("总高度="+screen.height+",总宽度"+screen.width);
+			document.write("可用高度="+screen.availHeight+",可用宽度"+screen.availWidth);
+		</script>
+	</body>
+</html>

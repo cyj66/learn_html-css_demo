@@ -1,0 +1,5 @@
+div{
+	column-count: 3;
+	column-gap: 50px;
+	column-rule:yellow 5px outset;     /* 顺序没所谓啊,颜色线宽样式 */
+}

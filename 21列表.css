@@ -1,0 +1,11 @@
+
+ul.ul1{
+	list-style-image: url("image/下载.jfif") ;
+}
+ul.ul2{
+	list-style: decimal;
+	list-style-position: outside;
+}
+ul.ul3{
+	list-style-position: inside;
+}

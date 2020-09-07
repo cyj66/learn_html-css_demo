@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>异常捕获</title>
+	</head>
+	
+	<body>
+		<script>
+			function demo(){
+				try{             //try里面的必执行
+					alert(i);
+				}catch (err){
+					alert(err);
+				}
+			}
+			demo();
+		</script>
+		
+		<form>
+			<input id="txt" type="text">
+			<input id="btn" type="button" onclick="demo2()" value="按钮">
+		</form>
+		<script>
+			function demo2(){
+				try{
+					var j=document.getElementById("txt").value;
+					if(j==""){
+						throw "请输入"
+					}
+				}catch(err){
+					alert(err);
+				}
+			}
+		</script>
+	</body>
+</html>

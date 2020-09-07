@@ -1,0 +1,38 @@
+/* *{                              这里会导致ol显示不出编号
+	margin:0px;
+	padding:0px;
+} */
+
+h1{
+	color:darkgoldenrod;
+}
+
+p.lei{                      /* 类选择器可结合元素选择器使用，此处P可加可不加，因为lei唯一 */
+	color:navy;
+}
+
+.p1{
+	color:chartreuse;
+}
+.p2{
+	font-size:20px;
+}
+.p1.p2{
+	font-style: italic;
+}
+
+#idxuan{
+	font-family: "arial black";
+}
+
+p b{                     /* 若b为第n层,也可直接p n */
+	color:burlywood;
+}
+p>i{                      /* 若i为第n层,则只能p>...>i，此为子元素选择器 */
+	color:burlywood;
+}
+
+li+li{
+	font-size: 50px;
+	text-align: center;
+}

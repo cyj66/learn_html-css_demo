@@ -1,0 +1,35 @@
+div{
+	width:100px;
+	height:100px;
+	background-color: gold;
+	position: relative;
+	animation: anim 1s infinite alternate;
+}
+
+@keyframes anim{
+	0%{
+		background-color: yellow;
+		left:0px;
+		top:0px;
+	}
+	25%{
+		background-color: darkcyan;
+		left:200px;
+		top:0px;
+	}
+	50%{
+		background-color: darkmagenta;
+		left:200px;
+		top:200px;
+	}
+	75%{
+		background-color: mediumaquamarine;
+		left:0px;
+		top:200px;
+	}
+	100%{
+		background-color: crimson;
+		left:0px;
+		top:0px;
+	}
+}

@@ -1,0 +1,21 @@
+div{
+	width:100px;
+	height:100px;
+	background-color: palegoldenrod;
+}
+
+.div1{
+	transform: translate(100px,100px);    /* 不同浏览器不同 */
+}
+.div2{
+	transform:rotate(90deg);    /* 顺时针旋转 */
+}
+.div3{
+	transform:scale(0.5,0.5);      /* 缩放 */
+}
+.div4{
+	transform: skew(10deg,10deg);       /* 倾斜 */
+}
+.div5{
+	transform: rotateX(50deg);
+}

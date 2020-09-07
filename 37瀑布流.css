@@ -1,0 +1,12 @@
+.container{
+	column-width: 320px;
+	column-gap: 5px;
+	column-rule: black 5px double;
+}
+img{
+	width:320px;
+	margin:5px auto;
+}
+p{
+	text-align: center;
+}

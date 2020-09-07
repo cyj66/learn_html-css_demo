@@ -1,0 +1,18 @@
+#posi1{
+	width:100px;
+	height:100px;
+	background-color: bisque;
+	position: relative;    /* relative,absolute,fixed,static */
+	left:100px;      /* 距离左边多了100px */
+	top:100px;       /* 距离上边多了100px */
+	z-index: 2;      /* 覆盖顺序，谁大谁在前 */
+}
+#posi2{
+	width:100px;
+	height:100px;
+	background-color: indigo;
+	position: relative;    
+	left:120px;      
+	top:60px;      
+	z-index: 1;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>window对象</title>
+	</head>
+	
+	<body>
+		<button id="btn1" onclick="btnclick1()">打开按钮</button>
+		<button id="btn2" onclick="btnclick2()">关闭按钮</button>
+		<script>
+			window.document.write("width="+window.innerWidth+",height="+window.innerHeight);  //window可省略
+			function btnclick1(){
+				window.open("55dom对象控制.html","lbwnb","height=200,width=200,top=100,left=100 ");
+			}
+			function btnclick2(){
+				window.close();
+			}
+		</script>
+	</body>
+</html>

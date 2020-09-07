@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>选择器</title>
+		<link rel="stylesheet" type="text/css" href="32选择器.css">
+		<style>
+			[title]{
+				color:saddlebrown;
+			}
+			
+			[href="http://www.bilibili.com"]{
+				font-size: larger;
+			}
+			
+			[title~="title"]{
+				color:red;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>元素选择器</h1>
+		
+		<p class="lei">类选择器,可以结合元素选择器使用</p>
+		
+		<p class="p1">多类选择器</p>
+		<p class="p2">多类选择器</p>
+		<p class="p1 p2">多类选择器</p>
+		
+		<div id="idxuan">id选择器</div>       <!-- 同个id的只能有一个 -->
+		
+		<p title="">属性选择器</p>
+		
+		<a href="http://www.bilibili.com">属性值选择器</a>
+		
+		<p title="tit">根据部分属性值进行选择</p>                 <!-- 得具有独立的"title"才可 -->
+		<p title="title">根据部分属性值进行选择</p>
+		<p title="???">根据部分属性值进行选择</p>
+		<p title="titlefdfdfdfdfdfdfdfdfdfdfdf">根据部分属性值进行选择</p>
+		<p title="title fdfdfdfdfdfdfdfdfdfdfdf">根据部分属性值进行选择</p>
+		
+		<p>后代<b>选择器</b></p>
+		
+		<p>子元素<i>选择器</i></p>
+		
+		<div>
+			<ul>
+				<li>相邻兄弟选择器</li>
+				<li>相邻兄弟选择器</li>
+				<li>相邻兄弟选择器</li>
+			</ul>
+			<ol>
+				<li>相邻兄弟选择器1</li>
+				<li>相邻兄弟选择器2</li>
+				<li>相邻兄弟选择器3</li>
+			</ol>
+		</div>
+	</body>
+</html>

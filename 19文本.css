@@ -1,0 +1,20 @@
+p{
+	text-align: center;  /* 文本对齐方式 */
+	font-size: 20px;     /* 字体大小 */
+	font-family: "arial narrow";     /* 字体样式 */
+}
+h5{
+	text-indent: 10em;  /* 首行缩进距离，可以是负数*/
+} 
+#p1{
+	text-transform: capitalize;      /* 规范大小写 */
+}
+#p2{
+	text-transform:lowercase;
+}
+#p3{
+	text-transform: uppercase;
+}
+#p4{
+	text-shadow: 5px 5px 5px aqua;
+}

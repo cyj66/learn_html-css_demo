@@ -1,0 +1,14 @@
+a:link{
+	color:red;
+	text-decoration: none;   /* 去掉链接的下划线 */
+	background-color: blue;
+}
+a:visit{
+	color:orange;
+}
+a:hover{
+	color:yellow;
+}
+a:active{
+	color:green;
+}

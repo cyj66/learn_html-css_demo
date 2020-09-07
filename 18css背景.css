@@ -1,0 +1,17 @@
+body{
+	background-size: 100px 100px;
+	/* color:magenta;此处为字体的颜色,不是背景的颜色 */
+	background-color: magenta;
+	background-image: url(下载.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;  /* 图片位置在中间,并从图片的上端开始显示 */
+	background-position: 100px 100px;
+	background-position: 50% 20px;
+	background-attachment:fixed;    /* 图片固定，不滚动 */
+}
+p{
+	width:150px;
+	padding:10px;     /* 边框 */
+	background-color: teal;
+}
+

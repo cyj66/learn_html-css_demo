@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>计时器</title>
+	</head>
+	
+	<body>
+		<button id="btn1" onclick="stoptime()">停止按钮</button>
+		<button id="btn2" onclick="mywin()">弹出按钮</button>
+		<p id="time"></p>
+		<script>
+			var mytime=setInterval(function(){gettime();},1000);
+			function gettime(){
+				var t=new Date();
+				document.getElementById("time").innerHTML=t.toLocaleTimeString();
+			}
+			function stoptime(){
+				clearInterval(mytime);
+			}
+			
+			function mywin(){
+				alert("hello");
+				setTimeout(function(){mywin()},3000);    //无限递归，每3秒一个
+			}
+		</script>
+	</body>
+</html>

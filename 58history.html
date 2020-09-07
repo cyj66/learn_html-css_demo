@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>history</title>
+	</head>
+	
+	<body>
+		<form>
+			<input type="text" id="username">
+			<button id="btn" onclick="safe()">跳转按钮</button>
+		</form>
+		<script>
+			function safe()
+			{
+				var name=document.getElementById("username").value;
+				if(name=="hello"){
+					history.back();     //回到上一个页面
+				}else{
+					alert("输入错误");
+				}
+			}
+		</script>
+	</body>
+</html>

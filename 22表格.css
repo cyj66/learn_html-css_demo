@@ -1,0 +1,10 @@
+#tb,tr,th,td{
+	border:1px solid blue;
+	text-align: center;
+	background-color: coral;
+}
+#tb{
+	width:400px;
+	height:400px;
+	border-collapse: collapse;   /* 折叠边框 */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>dom对象控制</title>
+	</head>
+	
+	<body>
+		<p name="pn">hello1</p>
+		<p name="pn">hello2</p>
+		<p name="pn">hello3</p>
+		<p name="pn">hello4</p>
+		
+		<a id="id1" title="a1的属性"></a>
+		<a id="id2" title="a2的属性"></a>
+		
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+		
+		<script>
+			document.getElementsByName("pn")[2].innerHTML="world";
+			document.getElementsByTagName("p")[1].innerHTML="world";
+			alert(document.getElementById("id1").getAttribute("title"));     //"title"换成"id"也可，可获得"id1"
+			document.getElementById("id2").setAttribute("title","a2的属性已修改");   //修改属性
+			alert(document.getElementById("id2").getAttribute("title"));  
+			
+			document.write(document.getElementsByTagName("ul")[0].childNodes.length);  //访问子节点，length算上四处空白为7
+			document.write(document.getElementsByTagName("li")[2].parentNode.nodeName); //访问父节点
+			
+			function getsize(){
+				var w=document.documentElement.offsetWidth;      //第二项换为body也可以
+				var h=document.documentElement.offsetHeight;
+				alert(w+","+h);
+			}
+			getsize();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+td{
+	/* padding:100px; */
+	padding-left:100px;
+	padding-right:100px;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+
+
+h1{
+	border-style: groove;
+	border-width: 10px;
+	border-color: aqua;
+}
+h2{
+	border-radius:10px;
+	border:2px solid black;   /* 统一定义 */
+	background-color: bisque;
+	text-align: center;
+}
+
+
+body{
+	margin: 0px;
+}
+.marginn{
+	background-color: #00FFFF;
+	width:100px;
+	height: 100px;
+	margin:100px;
+}

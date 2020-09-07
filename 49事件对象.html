@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>事件对象</title>
+	</head>
+	
+	<body>
+		<div id="div1">
+			<button id="b1">按钮1</button>
+			<button id="b2">按钮2</button>
+			<a href="http://www.jikexueyuan.com" id="jike">极客学院</a>
+		</div>
+		<script>
+			document.getElementById("b1").addEventListener("click",showtype);
+			document.getElementById("b2").addEventListener("click",showtarget);
+			document.getElementById("div1").addEventListener("click",showdiv);           //会产生事件冒泡
+			document.getElementById("jike").addEventListener("click",showjike); 
+			function showtype(event){
+				alert(event.type);
+			}
+			function showtarget(event){
+				alert(event.target);
+				event.stopPropagation();    //阻止事件冒泡
+			}
+			function showdiv(){
+				alert("div");
+			}
+			function showjike(event){
+				event.preventDefault();  	//阻止事件默认行为
+			}
+		</script>
+	</body>
+</html>

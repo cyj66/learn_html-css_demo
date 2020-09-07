@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>局部和全局</title>
+	</head>
+	
+	<body>
+		<script>
+			m=1;
+			var n=2;        //函数外，这两者为全局变量
+			function demo(){
+				var x=3;     //局部变量
+				y=4;          //函数内没有var，为全局变量,不过得先调用demo才可进行使用
+			}
+			demo();
+			alert(m);
+			alert(n);
+			alert(y);
+			alert(x);
+		</script>
+	</body>
+</html>

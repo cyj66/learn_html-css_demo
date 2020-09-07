@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>date</title>
+	</head>
+	
+	<body onload="starttime()">
+		<script>
+			var time=new Date();
+			document.write(time+"  ");
+			document.write(time.getFullYear()+"  ");
+			time.setFullYear(2020,0,1);       //月份从0开始
+			document.write(time+"  ");
+			
+			
+		</script>
+	</body>
+</html>

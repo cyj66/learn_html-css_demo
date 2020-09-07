@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: snow;
+}
+.wrapper{
+	width:80%;
+	height:1000px;
+	background-color: powderblue;
+	margin:0px auto;
+}
+.header{
+	margin:0px auto2;
+	width:100%;        /* 占wrapper的100% */
+	height:90px;
+	background-color: aqua;
+}
+.headertitle{
+	color:whitesmoke;
+	font-size: 30px;
+	font-family: "agency fb";
+	float:left;
+}
+.headernav{
+	padding-top:30px;
+	padding-bottom: 30px;
+	width:100%;
+	height:30px;
+	position:relative;
+}
+ul{
+	margin-left: :80px;
+	float:left;
+	list-style-type:none;
+	padding-top:6px;
+	padding-bottom: 6px;
+}
+li{
+	padding-left:40px;
+	display:inline;
+}
+a:link,a:visited{
+	font-size: bold;
+	color:darkgoldenrod;
+	text-align: center;
+	padding:6px;
+	text-decoration: none;
+}
+a:hover,a:active{
+	color:lawngreen;
+	
+}

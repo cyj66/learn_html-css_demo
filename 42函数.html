@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>函数</title>
+	</head>
+	
+	<body>
+		<script>
+			function sum(a,b){
+				var sum=a+b;
+				return sum;
+			}
+			alert(sum(10,10));    //弹出对话框
+		</script>
+		
+		<button onclick="alert(sum(20,30))">按钮</button>           <!-- script外执行 -->
+		
+		<form>
+			<input type="button" value="按钮" onclick="alert(sum(70,30))">
+		</form>
+	</body>
+</html>

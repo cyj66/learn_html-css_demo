@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>事件处理</title>
+	</head>
+	
+	<body>
+		<div><button id="btn1">按钮1</button></div>
+		<div><button id="btn2">按钮2</button></div>
+		
+		<script>
+			var a=document.getElementById("btn1");
+			a.onclick=function demo1(){alert("dmo0级事件处理程序1")};    //会被覆盖
+			a.onclick=function demo2(){alert("dmo0级事件处理程序2")};	
+		</script>
+		
+		<script>
+			var b1=document.getElementById("btn2").addEventListener("click",function(){alert("dom2级事件处理程序1")});  //不会覆盖
+			var b2=document.getElementById("btn2").addEventListener("click",function(){alert("dom2级事件处理程序2")});  //此处函数可有名可无名
+		</script>
+	</body>
+</html>

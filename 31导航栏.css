@@ -1,0 +1,35 @@
+body{
+	margin:0px auto;
+	width:70%;
+	height:1000px;
+	background-color: bisque;
+}
+a:link,a:visited{
+	text-decoration: none;
+	width:50px;
+	background-color: tomato;
+	color:white;
+	text-align: center;
+	margin:0px auto;
+}
+a:active,a:hover{
+	background-color: black;
+	margin:0px auto;
+}
+li{
+	font-weight:bold;     /* 加粗字体 */
+	list-style-type: none;
+	display:inline;
+}
+
+.image{
+	margin:10px;
+	border:1px solid black;
+	float:left;
+}
+.text{
+	text-align: center;
+}
+img{
+	opacity:0.5;    /* 不透明度 */
+}

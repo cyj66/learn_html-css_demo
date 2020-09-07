@@ -1,0 +1,26 @@
+#fd{
+	width:150px;
+	height:150px;      /* 第一个高度太高,第三个往右挪腾出空间 */
+	background-color: red;
+	float:left;
+}
+#sd{
+	width:100px;
+	height:100px;
+	background-color: green;
+	float:left;
+}
+#td{
+	width:100px;
+	height:100px;
+	background-color: blue;
+	float:left;
+}
+#container{
+	width:300px;      /* 宽度不够仨,第三个往下挪 */
+	height:300px;
+	background-color: thistle;
+}
+#clearr{
+	clear:both;   /* 清除所有浮动 */
+}

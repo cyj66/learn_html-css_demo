@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>事件句柄</title>
+	</head>
+	
+	<body>
+		<button id="btn1">按钮1</button>
+		<button id="btn2">按钮2</button>
+		<script>
+			document.getElementById("btn1").addEventListener("click",function(){alert("hello")});
+			
+			var x=document.getElementById("btn2");
+			x.addEventListener("click",hello1);            //增加事件句柄
+			x.addEventListener("click",hello2);
+			x.removeEventListener("click",hello1);          //移除事件句柄
+			function hello1(){
+				alert("hello1");
+			}
+			function hello2(){
+				alert("hello2");
+			}
+		</script>
+	</body>
+</html>

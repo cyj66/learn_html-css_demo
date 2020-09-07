@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数组对象</title>
+	</head>
+	
+	<body>
+		<script>
+			var a=[1,2,3];
+			var b=["hello","world"];
+			var c=a.concat(b);     //合并数组
+			document.write(c);
+		</script>	
+		<script>
+			var d=[8,6,2,7,3,9]
+			document.write(d.sort());     //默认升序
+			document.write(d.sort(function(a,b){return b-a;}));    //b-a降，a-b升
+			d.push("fuck");       //追加
+			document.write(d);
+			document.write(d.reverse());   //翻转
+		</script>
+	</body>
+</html>

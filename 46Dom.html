@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>dom</title>
+		<style>
+			#div1{
+				width:100px;
+				height:100px;
+				background-color: mediumaquamarine;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<p id="pid">hello1</p>
+		<p id="pid2">hello2</p>
+		<a id="aid" href="http://www.baidu.com">点我会跳到百度，得先点按钮3再点我才能调到小破站</a>
+		<button onclick="demo1()">按钮1</button>
+		<button onclick="demo2()">按钮2</button>
+		<button onclick="demo3()">按钮3</button>
+		<script>
+			function demo1(){
+				document.getElementById("pid").innerHTML="world1";
+			}
+			function demo2(){
+				document.getElementsByTagName("p")[1].innerHTML="world2";  //数组下标为1的p即第二个p
+			}
+			function demo3(){
+				document.getElementById("aid").href="http://www.bilibili.com";
+			}
+		</script>
+		
+		<div id="div1">hello</div>
+		<button onclick="demo4()">按钮4</button>
+		<script>
+			function demo4(){
+				document.getElementById("div1").style.background="blueviolet";
+			}
+		</script>
+	</body>
+</html>
